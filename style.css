@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #064e3b;
+    background: linear-gradient(135deg, #022c22 0%, #064e3b 100%);
+    color: #ecfdf5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.card {
+    background-color: #065f46;
+    padding: 32px 28px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+    border: 1px solid #047857;
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    color: #a7f3d0;
+    font-weight: 700;
+}
+
+.descricao {
+    font-size: 0.9rem;
+    color: #6ee7b7;
+    margin-bottom: 24px;
+    line-height: 1.4;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 18px;
+}
+
+label {
+    font-size: 0.875rem;
+    color: #d1fae5;
+    font-weight: 600;
+}
+
+input {
+    background-color: #022c22;
+    border: 1.5px solid #047857;
+    border-radius: 8px;
+    padding: 12px 14px;
+    color: #ffffff;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus {
+    border-color: #34d399;
+    box-shadow: 0 0 0 3px rgba(52, 211, 153, 0.2);
+}
+
+button {
+    width: 100%;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.1s ease, filter 0.2s ease;
+    margin-top: 6px;
+}
+
+button:hover {
+    filter: brightness(1.1);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.resultado {
+    margin-top: 22px;
+    padding: 16px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid transparent;
+}
+
+.resultado.escondido {
+    display: none;
+}
+
+.resultado.erro {
+    background-color: #7f1d1d;
+    border-color: #fca5a5;
+    color: #fecaca;
+}
+
+.resultado.sucesso {
+    background-color: #022c22;
+    border-color: #34d399;
+    color: #a7f3d0;
+}
+
+.resultado.alerta {
+    background-color: #713f12;
+    border-color: #fde047;
+    color: #fef08a;
+}
+
+.resultado h2 {
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+
+.resultado p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+}

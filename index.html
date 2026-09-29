@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Frete - Atividade Prática</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="card">
+        <h1>Verificador de Frete Grátis</h1>
+        <p class="descricao">Compras a partir de R$ 200,00 garantem frete grátis!</p>
+
+        <form id="form-frete">
+            <div class="input-group">
+                <label for="valorCompra">Valor Total da Compra (R$):</label>
+                <input type="number" id="valorCompra" step="0.01" placeholder="Ex: 150.00" required>
+            </div>
+
+            <button type="button" onclick="verificarFrete()">Verificar Frete</button>
+        </form>
+
+        <div id="resultado" class="resultado escondido">
+            <!-- O resultado gerado pelo JS aparecerá aqui -->
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
